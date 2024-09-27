@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.box-shadow {
+		background: linear-gradient(145deg, #9eaec5, #8593a6);
+		box-shadow: 15px 15px 30px #6c7786, -15px -15px 30px #bccfea;
+	}
+}
