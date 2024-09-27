@@ -16,7 +16,7 @@ export default function Selector() {
 	}
 
 	return (
-		<div className="flex justify-around items-center gap-5">
+		<div className="flex justify-around items-center w-full">
 			{selectorItem.map((item) => (
 				<BtnSelector
 					key={item.id}

@@ -5,10 +5,11 @@ export default {
     container:{
       center:true,
       padding:{
-        "sm":"1rem",
-        "md":"2rem",
-        "lg":"3rem",
-        "xl":"4rem",
+        DEFAULT : "1rem",
+        "sm":"2rem",
+        "md":"3rem",
+        "lg":"4rem",
+        "xl":"5rem",
       }
     },
     fontFamily:{
@@ -22,6 +23,9 @@ export default {
 				mainBg: "#171932",
 				secBg: "#34354e",
 			},
+      screens:{
+        "xmd" : "900px"
+      }
 		},
 	},
 	plugins: [],
