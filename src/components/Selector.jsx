@@ -1,15 +1,7 @@
 import { useState } from "react";
 import BtnSelector from "./BtnSelector";
 
-export default function Selector() {
-	const selectorItem = [
-		{ title: "همه", id: 0 },
-		{ title: "انجام شده", id: 1 },
-		{ title: "انجام نشده", id: 2 },
-		{ title: "تاریخ امروز", id: 3 },
-	];
-
-	const [whoIsActive, setWhoIsActive] = useState(0);
+export default function Selector({selectorItem , whoIsActive , setWhoIsActive}) {
 
 	function changeActive(id) {
 		setWhoIsActive(id);
