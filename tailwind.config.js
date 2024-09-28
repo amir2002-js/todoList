@@ -15,6 +15,7 @@ export default {
     fontFamily:{
       "danaBold":"dana-bold",
       "dana":"dana",
+      "danaBlack" : "dana-black",
     },
 		extend: {
 			colors: {

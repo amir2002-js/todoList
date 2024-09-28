@@ -2,14 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+	.main-btn {
+		@apply text-center bg-gradient-to-t from-mainColor to-secColor;
+	}
+}
+
+@layer utilities {
+	.text-gradient {
+		background: linear-gradient(to top, #e05b1d, #f49f34);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
 
 @layer base {
-  @font-face {
-    font-family: "dana-bold";
-    src: url("../public/Fornts/DanaFaNum-Bold.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "dana";
-    src: url("../public/Fornts/DanaFaNum-Medium.ttf") format("truetype");
-  }
+	@font-face {
+		font-family: "dana-bold";
+		src: url("../public/Fornts/DanaFaNum-Bold.ttf") format("truetype");
+	}
+	@font-face {
+		font-family: "dana";
+		src: url("../public/Fornts/DanaFaNum-Medium.ttf") format("truetype");
+	}
+	@font-face {
+		font-family: "dana-black";
+		src: url("../public/Fornts/DanaFaNum-Black.ttf") format("truetype");
+	}
 }
