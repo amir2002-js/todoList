@@ -6,9 +6,9 @@ export default function BtnSelector({ isActive, children, changeActive, id }) {
 			}}
 			className={`w-28 h-10 ${
 				isActive
-					? "shadow-[0_0_15px_rgba(255,255,255,0.4)] bg-gradient-to-t from-mainColor to-secColo"
+					? "bg-gradient-to-t from-mainColor to-secColor"
 					: ""
-			}r rounded-full`}
+			} rounded-full`}
 		>
 			{children}
 		</button>

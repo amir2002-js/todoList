@@ -3,6 +3,7 @@ import AddTodo from "./components/AddTodo";
 import SearchList from "./components/SearchList";
 import Selector from "./components/Selector";
 import ShowTodo from "./components/ShowTodo";
+import Footer from "./components/Footer";
 
 function App() {
 	const selectorItem = [
@@ -32,25 +33,32 @@ function App() {
 	}, []);
 
 	return (
-		<div className="text-white container max-w-[1400px] font-dana">
-			<div className="flex my-5 items-center justify-between gap-4 max-xmd:flex-col">
-				<SearchList />
-				<Selector
-					selectorItem={selectorItem}
+		<div className="text-white container max-w-[1400px] font-dana flex flex-col justify-between min-h-screen">
+			<main>
+				<div className="flex my-5 items-center justify-between gap-4 max-xmd:flex-col">
+					<SearchList />
+					<Selector
+						selectorItem={selectorItem}
+						whoIsActive={whoIsActive}
+						setWhoIsActive={setWhoIsActive}
+					/>
+				</div>
+				<div className="container w-full h-0.5 bg-secBg rounded-full my-2"></div>
+
+				<h2 className="text-[36px] font-danaBlack text-gradient flex place-content-center mt-7 mb-4">
+					لیست انجام کار
+				</h2>
+
+				<AddTodo changeTodos={changeTodos} todo={todos} />
+
+				<ShowTodo
+					changeTodos={changeTodos}
+					todos={todos}
 					whoIsActive={whoIsActive}
-					setWhoIsActive={setWhoIsActive}
 				/>
-			</div>
-			<div className="container w-full h-0.5 bg-secBg rounded-full my-2"></div>
+			</main>
 
-			<h2 className="text-3xl font-danaBlack text-gradient flex place-content-center mt-7 mb-4">
-				لیست انجام کار
-			</h2>
-
-			<AddTodo changeTodos={changeTodos} todo={todos} />
-
-            <ShowTodo changeTodos={changeTodos} todos={todos} whoIsActive={whoIsActive} />
-
+			<Footer />
 		</div>
 	);
 }

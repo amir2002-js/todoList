@@ -16,6 +16,7 @@ export default {
       "danaBold":"dana-bold",
       "dana":"dana",
       "danaBlack" : "dana-black",
+      "Harmattan" : "Harmattan"
     },
 		extend: {
 			colors: {

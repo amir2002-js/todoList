@@ -14,9 +14,16 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+	.transform-z{
+		transform: rotateX(55deg) rotateZ(-40deg);
+	}
 }
 
 @layer base {
+	@font-face {
+		font-family: "Harmattan";
+		src: url("../public/Fornts/Harmattan-SemiBold.ttf") format("truetype");
+	}
 	@font-face {
 		font-family: "dana-bold";
 		src: url("../public/Fornts/DanaFaNum-Bold.ttf") format("truetype");
