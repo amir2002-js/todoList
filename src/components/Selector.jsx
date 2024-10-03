@@ -1,8 +1,11 @@
 import { useState } from "react";
 import BtnSelector from "./BtnSelector";
 
-export default function Selector({selectorItem , whoIsActive , setWhoIsActive}) {
-
+export default function Selector({
+	selectorItem,
+	whoIsActive,
+	setWhoIsActive,
+}) {
 	function changeActive(id) {
 		setWhoIsActive(id);
 	}

@@ -23,9 +23,8 @@ export default function AddTodo({ changeTodos, todo }) {
 							};
 
 							changeTodos([...todo, newTodo]);
-							
 						}
-                        e.target[0].value = ""
+						e.target[0].value = "";
 					}}
 					action=""
 					className="bg-secBg w-1/2 min-w-80 rounded-full text-sm flex justify-between items-center"

@@ -2,7 +2,7 @@ import { GoCheck, GoTrash } from "react-icons/go";
 
 export default function Cart({ isDown, title, date, id, todo, changeTodos }) {
 	const now = new Date();
-	const day = now.getDate();
+	const day = now.getDay();
 	const month = now.getMonth();
 	const year = now.getFullYear();
 	return (

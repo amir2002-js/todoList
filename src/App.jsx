@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import AddTodo from "./components/AddTodo";
 import SearchList from "./components/SearchList";
 import Selector from "./components/Selector";
-import ShowTodo from "./components/ShowTodo";
 import Footer from "./components/Footer";
+import FilteredTodo from "./components/FilteredTodo";
 
 function App() {
 	const selectorItem = [
@@ -12,6 +12,8 @@ function App() {
 		{ title: "انجام نشده", id: 2, filterBy: "isNotDown" },
 		{ title: "تاریخ امروز", id: 3, filterBy: "today" },
 	];
+
+	const [searchWords, setSearchWords] = useState("");
 
 	const [whoIsActive, setWhoIsActive] = useState(0);
 
@@ -36,7 +38,12 @@ function App() {
 		<div className="text-white container max-w-[1400px] font-dana flex flex-col justify-between min-h-screen">
 			<main>
 				<div className="flex my-5 items-center justify-between gap-4 max-xmd:flex-col">
-					<SearchList />
+					<SearchList
+						whoIsActive={whoIsActive}
+						setWhoIsActive={setWhoIsActive}
+						setSearchWords={setSearchWords}
+					/>
+
 					<Selector
 						selectorItem={selectorItem}
 						whoIsActive={whoIsActive}
@@ -51,10 +58,11 @@ function App() {
 
 				<AddTodo changeTodos={changeTodos} todo={todos} />
 
-				<ShowTodo
+				<FilteredTodo
 					changeTodos={changeTodos}
 					todos={todos}
 					whoIsActive={whoIsActive}
+					searchWords={searchWords}
 				/>
 			</main>
 
