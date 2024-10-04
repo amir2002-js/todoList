@@ -35,7 +35,7 @@ function App() {
 	}, []);
 
 	return (
-		<div className="text-white container max-w-[1400px] font-dana flex flex-col justify-between min-h-screen">
+		<div className="text-white container max-w-[1400px] font-dana flex flex-col justify-between min-h-svh">
 			<main>
 				<div className="flex my-5 items-center justify-between gap-4 max-xmd:flex-col">
 					<SearchList
