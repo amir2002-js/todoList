@@ -34,7 +34,7 @@ export default function AddTodo({ changeTodos, todo }) {
 						className="outline-none bg-transparent px-4 py-1.5 w-full"
 						placeholder="اضافه کردن به لیست...."
 					/>
-					<button className="main-btn size-9 flex place-content-center items-center rounded-full">
+					<button className="main-btn size-9 flex place-content-center items-center rounded-full flex-shrink-0">
 						<TiFolderAdd className="text-xl" />
 					</button>
 				</form>
