@@ -10,7 +10,7 @@ function App() {
 		{ title: "همه", id: 0, filterBy: true },
 		{ title: "انجام شده", id: 1, filterBy: "isDown" },
 		{ title: "انجام نشده", id: 2, filterBy: "isNotDown" },
-		{ title: "تاریخ امروز", id: 3, filterBy: "today" },
+		{ title: "آخرین ها", id: 3, filterBy: "today" },
 	];
 
 	const [searchWords, setSearchWords] = useState("");

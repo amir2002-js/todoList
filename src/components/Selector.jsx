@@ -1,4 +1,3 @@
-import { useState } from "react";
 import BtnSelector from "./BtnSelector";
 
 export default function Selector({

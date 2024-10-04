@@ -18,7 +18,7 @@ export default function FilteredTodo({
 		filteredTodos = todos.filter(
 			(item) =>
 				item.date ===
-				`${new Date().getDay()} / ${new Date().getMonth()} / ${new Date().getFullYear()}`
+				`${new Date().getDate()} / ${new Date().getMonth()} / ${new Date().getFullYear()}`
 		);
 	} else if (whoIsActive == 5) {
 		filteredTodos = todos.filter((item) =>

@@ -18,7 +18,7 @@ export default function AddTodo({ changeTodos, todo }) {
 							const newTodo = {
 								title: e.target[0].value,
 								id: Date.now(),
-								date: `${new Date().getDay()} / ${new Date().getMonth()} / ${new Date().getFullYear()}`,
+								date: `${new Date().getDate()} / ${new Date().getMonth()} / ${new Date().getFullYear()}`,
 								isDown: false,
 							};
 
@@ -27,7 +27,7 @@ export default function AddTodo({ changeTodos, todo }) {
 						e.target[0].value = "";
 					}}
 					action=""
-					className="bg-secBg w-1/2 min-w-80 rounded-full text-sm flex justify-between items-center"
+					className="bg-secBg sm:w-2/3 sm:min-w-80 max-sm:w-full max-sm:mx-4  rounded-full text-sm flex justify-between items-center"
 				>
 					<input
 						type="text"
